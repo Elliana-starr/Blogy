@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3 mx-5" href="#">Blogy<span class="text-danger">.</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item">
+                <a class="nav-link ">
+                    <i class="bi bi-facebook fs-5 mx-2"></i>
+                    <i class="bi bi-twitter fs-5 mx-2"></i>
+                    <i class="bi bi-instagram fs-5 mx-2"></i>
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-danger" type="submit">Search</button> 
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <style>
+        button:hover{
+          transition: 0.4s ease;
+        }
+      </style>
+
+      <div class=" list">
+        <ul class="d-flex gap-5 justify-content-center my-3 bg-body-tertiary p-3">
+            <li>
+                <a class="text-danger" href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Category</a>
+            </li>
+            <li>
+                <a href="#">Blog Details</a>
+            </li>
+            <li>
+                <a href="#">Author Profile</a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">About</a></li>
+                  <li><a class="dropdown-item" href="#">Category</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                  <li><a class="dropdown-item" href="#">Author Profile</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+            </li>
+      </div>
+
+
+      <!-- hero section -->
+        <div class="container">
+          <div class="row g-4">
+            
+            <!-- First Image -->
+            <div class="col-md-6">
+              <div class="position-relative">
+                <img src="./asset/img1.webp" class="img-fluid rounded" alt="Image 1">
+                <div class="position-absolute bottom-0 start-0 text-white p-2">
+                  
+                  <i class="bi bi-chevron-down text-light"> <span class="text-light fw-bold mx-0">Apr. 14th, 2025</span></i>
+                <i class="bi bi-three-dots-vertical text-light"> <span class="text-light fw-bold">Technology</span></i>
+                <h6 class="fs-4 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Second Image -->
+            <div class="col-md-6">
+              <div class="position-relative">
+                <img src="./asset/blog-post-7.webp" class="img-fluid rounded " alt="Image 2">
+                <div class="position-absolute bottom-0 start-0 text-white p-2 ">
+                  <i class="bi bi-chevron-down text-light"> <span class="fw-bold">Apr. 14th, 2025</span></i>
+                  <i class="bi bi-three-dots-vertical text-light"> <span class="text-light fw-bold">Security</span></i>
+                  <h6 class="fs-4 mt-2">Sed do eiusmod tempor <br> incididunt ut labore</h6>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+        
+      </section>
+
+      
+      <!-- 2nd images  -->
+        <section class="my-5">
+          <div class="container">
+            <div class="row g-3">
+        
+              <div class="col-md-4">
+                <div class="card bg-dark text-white shadow rounded-3 overflow-hidden">
+                  <img src="./asset/blog-post-9.webp" class="card-img" alt="Image 1">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <small>Apr 14th, 2025</small>
+                    <h5 class="card-title">Ut enim ad minima veniam quis nostrum exercitation</h5>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-4">
+                <div class="card bg-dark text-white shadow rounded-3 overflow-hidden">
+                  <img src="./asset/blog-post-7.webp" class="card-img" alt="Image 2">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <small>Apr 14th, 2025</small>
+                    <h5 class="card-title">Aliquip ex ea commodo consequat tempor incididunt</h5>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-4">
+                <div class="card bg-dark text-white shadow rounded-3 overflow-hidden">
+                  <img src="./asset/blog-post-6.webp" class="card-img" alt="Image 3">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <small>Apr 14th, 2025</small>
+                    <h5 class="card-title">Excepteur sint occaecat cupidatat non proident</h5>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </section>
+
+        <section class="gh">
+          <div class="d-flex align-items-center">
+          <span class="ms-5 text-grey">FEATURED POSTS</span>
+          <div class=" ms-1 border-danger border-bottom border-1" style="width:90px;"></div>
+        </div>
+        
+          <h3 class="ms-5 fs-4">CHECK OUR FEATURED POSTS</h3>
+
+          <style>
+            /* Smoothen carousel sliding */
+            .carousel-item {
+              transition: transform 1s ease-in-out;
+            }
+            .hh img {
+      filter: blur(2px);
+      transform: scale(1.05);
+      object-fit: cover;
+      transition: all 0.4s ease;
+    }
+
+    /* 🔹 When hovered, reduce blur for nice effect (optional) */
+     .hh:hover img {
+      filter: blur(0px);
+      transform: scale(1.07); 
+    }
+          </style>
+          
+          <div id="multiCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+          
+              <!-- First set of 3 images -->
+              <div class="carousel-item active">
+                <div class="row ff mx-5 mt-4"> <!-- mx-2 adds margin left & right -->
+                  <div class="col-md-4">
+                    <div class="card hh">
+                      <img src="./asset/blog-post-portrait-2.webp" class="card-img-top" alt="...">
+                      <div class="card-img-overlay cards d-flex flex-column justify-content-center">
+                        <h5 class="text-white bg-opacity-50 p-2"><i class=" info bi bi-person"></i> <span class=" info">Julia Parker</span>
+                        <i class=" info ms-2 bi-clock" style="font-size: 17px;"></i> <span class="info">Jan 24, 2025</span>
+                        <div class="">
+                          <i class=" info bi bi-chat-dots"></i> <span class="info">6 comments</span>
+                        </div>
+                        </h5>
+
+                        <div class="infotext1">
+                          <h5 class="text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Provident commodi dignissimos ipsam? 
+                          </h5>
+                        </div>
+                      </div>
+                    
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card hh">
+                      <img src="./asset/blog-post-portrait-3.webp" class="card-img-top" alt="...">
+                      <div class="card-img-overlay cards d-flex flex-column justify-content-center">
+                        <h5 class="text-white bg-opacity-50 p-2"><i class=" info bi bi-person"></i> <span class=" info">Sarah Johnson</span>
+                        <i class=" info ms-2 bi-clock" style="font-size: 17px;"></i> <span class="info">Jan 24, 2025</span>
+                        <div class="">
+                          <i class=" info bi bi-chat-dots"></i> <span class="info">15 comments</span>
+                        </div>
+                        </h5>
+
+                        <div class="infotext1">
+                          <h5 class="text-light">
+                            Eos iusto modi recusandae error aliquam
+                             totam natus omnis odit. Ex, nostrum mollitia.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card hh">
+                      <img src="./asset/blog-post-portrait-4.webp" class="card-img-top" alt="...">
+                      <div class="card-img-overlay cards d-flex flex-column justify-content-center">
+                        <h5 class="text-white bg-opacity-50 p-2"><i class=" info bi bi-person"></i> <span class=" info">Mark Wilson</span>
+                        <i class=" info ms-2 bi-clock" style="font-size: 17px;"></i> <span class="info">Jan 24, 2025</span>
+                        <div class="">
+                          <i class=" info bi bi-chat-dots"></i> <span class="info">6 comments</span>
+                        </div>
+                        </h5>
+
+                        <div class="infotext1">
+                          <h5 class="text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Provident commodi dignissimos ipsam? 
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Second set of 3 images -->
+              <div class="carousel-item">
+              
+                <div class="row ff mx-5 mt-4">
+                  <div class="col-md-4">
+                    <div class="card hh">
+                      <img src="./asset/blog-post-portrait-5.webp" class="card-img-top" alt="...">
+                      <div class="card-img-overlay cards d-flex flex-column justify-content-center">
+                        <h5 class="text-white bg-opacity-50 p-2"><i class=" info bi bi-person"></i> <span class=" info">David Brown</span>
+                        <i class=" info ms-2 bi-clock" style="font-size: 17px;"></i> <span class="info">Jan 24, 2025</span>
+                        <div class="">
+                          <i class=" info bi bi-chat-dots"></i> <span class="info">6 comments</span>
+                        </div>
+                        </h5>
+
+                        <div class="infotext1">
+                          <h5 class="text-light">
+                            Eos iusto modi recusandae error aliquam
+                            totam natus omnis odit. Ex, nostrum mollitia.
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card hh">
+                      <img src="./asset/img2.webp" class="card-img-top" alt="...">
+                      <div class="card-img-overlay cards d-flex flex-column justify-content-center">
+                        <h5 class="text-white bg-opacity-50 p-2"><i class=" info bi bi-person"></i> <span class=" info">Julia Parker</span>
+                        <i class=" info ms-2 bi-clock" style="font-size: 17px;"></i> <span class="info">Jan 24, 2025</span>
+                        <div class="">
+                          <i class=" info bi bi-chat-dots"></i> <span class="info">6 comments</span>
+                        </div>
+                        </h5>
+
+                        <div class="infotext1">
+                          <h5 class="text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Provident commodi dignissimos ipsam? 
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card hh">
+                      <img src="./asset/blog-post-portrait-3.webp" class="card-img-top" alt="...">
+                      <div class="card-img-overlay cards d-flex flex-column justify-content-center">
+                        <h5 class="text-white bg-opacity-50 p-2"><i class=" info bi bi-person"></i> <span class=" info">Emma Davis</span>
+                        <i class=" info ms-2 bi-clock" style="font-size: 17px;"></i> <span class="info">Jan 24, 2025</span>
+                        <div class="">
+                          <i class=" info bi bi-chat-dots"></i> <span class="info">6 comments</span>
+                        </div>
+                        </h5>
+
+                        <div class="infotext1">
+                          <h5 class="text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Provident commodi dignissimos ipsam? 
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          
+        </section>
+
+        <section>
+
+          <div class="d-flex align-items-center mt-5">
+            <span class="ms-5 text-grey">CATEGORY SECTION</span>
+            <div class=" ms-1 border-danger border-bottom border-1" style="width:90px;"></div>
+          </div>
+          
+            <h3 class="ms-5 fs-4">CATEGORY SECTION</h3>
+
+
+            <div class=" frr d-flex gap-4 m-5">
+              <div class="cc">
+                <img src="./asset/blog-post-6.webp" class="img-fluid" alt="...">
+              
+                  <div class="d-flex align-items-center flex-wrap small text-muted mt-3">
+                    <span class="text-danger fw-bold me-5">HEALTH</span>
+                    <img src="./asset/person-f-13.webp" alt="Author" class="rounded-circle me-2" width="25" height="25">
+                    <span class="me-2">William G.</span>
+                    <span>• 28 April 2025</span>
+                  </div>
+                  
+                  <div>
+                    <h5 class=" mt-2">Set ut persipple unde omnis iste natus error sit voluptatem</h5>
+                  </div>
+              </div>
+
+              <div class="cc">
+                <img src="./asset/blog-post-7.webp" class="img-fluid" alt="...">
+                
+                <div class="d-flex align-items-center flex-wrap small text-muted mt-3">
+                  <span class="text-danger fw-bold me-5">EDUCATION</span>
+                  <img src="./asset/person-m-5.webp" alt="Author" class="rounded-circle me-2" width="25" height="25">
+                  <span class="me-2">James F.</span>
+                  <span>• 30 April 2025</span>
+                </div>
+                
+                <div>
+                  <h5 class=" mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora optio.</h5>
+                </div>
+              </div>
+
+              <div class="cc">
+                <img src="./asset/blog-post-5.webp" class="img-fluid" alt="...">
+
+                <div class="d-flex align-items-center flex-wrap small text-muted mt-3">
+                  <span class="text-danger fw-bold me-5">GAMING</span>
+                  <img src="./asset/person-f-14.webp" alt="Author" class="rounded-circle me-2" width="25" height="25">
+                  <span class="me-2">Emma D.</span>
+                  <span>• 30 June 2025</span>
+                </div>
+                
+                <div>
+                  <h5 class=" mt-2">Limpedit tenetur nobis maxime quos nulla? Ducimus vitae ullam vel.</h5>
+                </div>
+              </div>
+            </div>
+        </section>
+
+
+
+      <!-- 1st part -->
+       <section class="tot">
+          <section class="btt m-5 d-flex">
+            <div class=" rrr  d-flex">
+              <img src="./asset/blog-post-6.webp" class=" w-25"  alt="...">
+
+              <div class=" ms-3">
+                <span class="text-danger fw-bold me-5">Gaming</span>
+                <h5 class="fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                <span class="text-muted">2 mins read.</span>
+                  <span class="text-muted">• 6 April 2026</span>
+              </div>
+            </div>
+
+            <div class=" rrr d-flex">
+              <img src="./asset/blog-post-5.webp" class=" w-25"  alt="...">
+
+              <div class=" ms-3">
+                <span class="text-danger fw-bold me-5">Gaming</span>
+                <h5 class="fw-lighter">Limpedit tenetur nobis nulla? Ducimus vitae ullam vel</h5>
+                <span class="text-muted">2 mins read.</span>
+                  <span class="text-muted">• 12 June 2026</span>
+              </div>
+            </div>
+
+            <div class=" rrr d-flex">
+              <img src="./asset/blog-post-7.webp" class=" w-25"  alt="...">
+
+              <div class="ms-3">
+                <span class="text-danger fw-bold me-5">Gaming</span>
+                <h5 class="fw-lighter">Ut persipple unde consectetur adipisicing elit.</h5>
+                <span class="text-muted">2 mins read.</span>
+                  <span class="text-muted">• 9 May 2026</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- 2nd part -->
+          <section class=" btt d-flex m-5 ">
+            <div class=" ggg  d-flex">
+              <img src="./asset/blog-post-6.webp" class=" w-25"  alt="...">
+
+              <div class=" ms-3">
+                <span class="text-danger fw-bold me-5">Gaming</span>
+                <h5 class="fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                <span class="text-muted">2 mins read.</span>
+                  <span class="text-muted">• 6 April 2026</span>
+              </div>
+            </div>
+
+            <div class=" ggg d-flex">
+              <img src="./asset/blog-post-5.webp" class=" w-25"  alt="...">
+
+              <div class=" ms-3">
+                <span class="text-danger fw-bold me-5">Gaming</span>
+                <h5 class="fw-lighter">Limpedit tenetur nobis nulla? Ducimus vitae ullam vel</h5>
+                <span class="text-muted">2 mins read.</span>
+                  <span class="text-muted">• 12 June 2026</span>
+              </div>
+            </div>
+
+            <div class=" ggg d-flex">
+              <img src="./asset/blog-post-7.webp" class=" w-25"  alt="...">
+
+              <div class="ms-3">
+                <span class="text-danger fw-bold me-5">Gaming</span>
+                <h5 class="fw-lighter">Ut persipple unde consectetur adipisicing elit.</h5>
+                <span class="text-muted">2 mins read.</span>
+                  <span class="text-muted">• 9 May 2026</span>
+              </div>
+            </div>
+          </section>
+        </section>
+      
+
+       
+
+        
+        
+
+      
+
+        
+
+     
